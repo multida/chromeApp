@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gamja Flower', cursive;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  
+}
+body > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+.main-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100vh;
+}
+
+#clock {
+  font-size: 100px;
+}
+
+.login-input {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  font-size: 28px;
+  outline: none;
+}
+.login-input::placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 0;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+}
+
+#greeting {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+#todo-form {
+  width: 100%;
+  margin-bottom: 5px;
+}
+#todo-form input {
+  width: 100%;
+  padding-bottom: 5px;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  font-size: 24px;
+  outline: none;
+}
+#todo-form input::placeholder {
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+}
+#todo-list {
+  width: 100%;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 20px;
+  margin: 5px 0; 
+}
+#todo-list span {
+  font-size: 20px;
+  color: #000;
+}
+#todo-list button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+#weather {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+}
+
+#quote {
+  position: relative;
+  bottom: 10px;
+  font-size: 18px;
+}
